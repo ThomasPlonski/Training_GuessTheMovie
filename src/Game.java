@@ -30,8 +30,6 @@ public class Game {
             String typedLetter = scanner.next();
 //            alreadyTypedLetters += typedLetter;
 
-//            sprawdz czy to jest litera jesli nie to blad
-//            sprawdz czy juz ta litera nie zostala wprowadzona i jesli nie to przejd do zagadywanai dopiero
             //        check if typed sign is a letter
             if (wasAlreadyTyped(typedLetter)) {
                 System.out.println("Letter '" + typedLetter + "' was already typed (you do not lose point).");
@@ -49,7 +47,7 @@ public class Game {
                 } else {
                     System.out.println("You have still " + points + " points.");
                     }
-                System.out.println("(Already typed WRONG letters are: " + alreadyTypedWrongLetters +")");
+                System.out.println("(Already typed wrong letters are: " + alreadyTypedWrongLetters +")");
 
             } else {
                 System.out.print("You have NOT guessed and lose 1 point! '" + typedLetter + "' is NOT in the tittle. ");
